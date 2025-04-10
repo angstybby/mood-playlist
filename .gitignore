@@ -1,0 +1,13 @@
+# Node
+node_modules
+.env
+
+# Python (if using)
+__pycache__/
+*.pyc
+
+# React build
+frontend/build
+
+# System
+.DS_Store
