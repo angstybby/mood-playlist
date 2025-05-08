@@ -9,7 +9,7 @@ function App() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-6">Mood-Based Playlist Generator</h1>
       <MoodInput onPlaylistFetched={setPlaylist} />
-      {playlist.length > 0 && <PlaylistDisplay playlist={playlist} />}
+      {Array.isArray(playlist) && playlist.length > 0 && <PlaylistDisplay playlist={playlist} />}
     </div>
   );
 }

@@ -10,7 +10,7 @@ const moodToPlaylist = {
 router.post("/", (req, res) => {
   const { mood } = req.body;
   const playlist = moodToPlaylist[mood.toLowerCase()] || ["No songs found for that mood."];
-  res.json(playlist);
+  res.json({ playlist });
 });
 
 module.exports = router;
